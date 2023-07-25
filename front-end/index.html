@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My first API(Express and MongoDB) and JavaScript Fetch</h1>
+    </header>
+    <div class="conteiner-sc-table">
+        <button onclick="showDataInTable()"><p>Show Data (GET)</p></button>
+        <button onclick="cleanDataInTable()">Clean Table</button>
+    </div>
+    <div class="div-table">
+        <table id="table">
+            <thead>
+                <th class="thId">Id</th>
+                <th class="thCountry">Country</th>
+                <th class="thLenguage">Lenguage</th>
+                <th class="thPopulation">Population</th>
+                <th class="thCapital">Capital</th>
+            </thead>
+            <tbody id="data">
+            </tbody>
+        </table>
+    </div>
+    <div class="conteiner-post-and-put">
+        <div class="conteiner-post">
+            <form id="form">
+                <div class="conteiner-button">
+                    <button type="submit"><p>Create a New Row</p><p>(POST)</p></button>
+                </div>
+                <div class="container-inputs">
+                    <!-- <div class="container-label"><label class="id-post">Id</label><input class="input-post" name="id" type="text"></div> -->
+                    <div class="container-label"><label class="country">Country</label><input class="input-post" name="country"type="text"></div>
+                    <div class="container-label"><label class="lenguage">Lenguage</label><input class="input-post" name="lenguage" type="text"></div>
+                    <div class="container-label"><label class="population">Population</label><input class="input-post" name="population" type="text"></div>
+                    <div class="container-label"><label class="capital">Capital</label><input class="input-post" name="capital" type="text"></div>
+                </div>
+            </form>
+        </div>
+        <div class="conteiner-put">
+            <form id="form2">
+                <div class="conteiner-button">
+                    <button type="submit"><p>Update a Row</p><p>(PUT)</p></button>
+                    <label class="id-post">Id</label><input class="input-id-selected" name="id2" type="text">
+                </div>
+                <div class="container-inputs">
+                    <div class="container-label"><label class="country">Country</label><input class="input-post" name="country2"type="text"></div>
+                    <div class="container-label"><label class="lenguage">Lenguage</label><input class="input-post" name="lenguage2" type="text"></div>
+                    <div class="container-label"><label class="population">Population</label><input class="input-post" name="population2" type="text"></div>
+                    <div class="container-label"><label class="capital">Capital</label><input class="input-post" name="capital2" type="text"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="conteiner-patch-and-delete">
+        <div class="conteiner-patch">
+            <form id="form3">
+                <div class="conteiner-button">
+                    <button type="submit"><p>Update a Table Cell</p><p>(PATCH)</p></button>
+                    <label class="id-post">Id</label><input class="input-id-selected" name="id3" type="text">
+                </div>
+                <div class="container-label">
+                    <select name="select3">
+                        <option>Country</option>
+                        <option>Lenguage</option>
+                        <option>Population</option>
+                        <option>Capital</option>
+                    </select>
+                    <input class="input-post" name="input-patch" type="text">
+                </div>
+            </form>
+        </div>
+        <div class="conteiner-delete">
+            <form id="form4">
+                <div>
+                    <button type="submit"><p>Delete a Row</p><p>(DELETE)</p></button>
+                    <label class="id-post">Id</label><input class="input-id-selected" name="id4" type="text">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

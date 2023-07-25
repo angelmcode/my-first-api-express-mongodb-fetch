@@ -1,0 +1,15 @@
+{
+  "name": "my-first-api-express-mongodb-fetch",
+  "version": "1.0.0",
+  "description": "My first API(Express and MongoDB) and use of the fetch method (GET, POST. PUT. PATCH and DELETE)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AngelMCode",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.0"
+  }
+}
